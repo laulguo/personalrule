@@ -1,2 +1,9 @@
+[Adblock Plus 2.0]
+! Title: JumpingFilters
+! Expires: Never
+! Version: 20191225
+! Last Modified: 2019年12月25日 09:00
+! Homepage: https://github.com/laulguo/personalrule
+! Start
 ||baidu.com/|$replace=/target=_blank/target=_self/
 |http$replace=/target="_blank"/target="_self"/
