@@ -1,0 +1,4 @@
+http://$s@target="_blank"@target="_self"@
+http://$s@target=_blank@target=_self@
+https://$s@target="_blank"@target="_self"@
+https://$s@target=_blank@target=_self@
