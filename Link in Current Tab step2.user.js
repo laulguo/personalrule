@@ -5,7 +5,7 @@
 // @include       *.baidu.*
 // @include       *qidian.com*
 // @namespace     *
-// @updateURL https://gitee.com/laulguo/personalrule/raw/master/target%20blank%20remove_part_mode/Link%20in%20Current%20Tab%20step2.user.js
+// @updateURL https://raw.githubusercontent.com/laulguo/personalrule/master/target%20blank%20remove_part_mode/Link%20in%20Current%20Tab%20step2.user.js
 // @description   Force all links to be opened in current tab instead of the new one
 // Based on SAGAN‘s Link in Current Tab-https://chrome.google.com/webstore/detail/cbkcdebbfbegnmbephalggnchfebihbl
 // ==/UserScript==
