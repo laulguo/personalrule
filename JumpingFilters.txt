@@ -1,0 +1,4 @@
+[Adblock Plus 2.0]
+! Title: JumpingFilters
+! Version: 20220704
+|http$subdocument,replace=/target="_blank"/target="_self"/
