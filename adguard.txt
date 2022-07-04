@@ -6,4 +6,4 @@
 ! Homepage: https://github.com/laulguo/personalrule
 ! Start
 ||baidu.com/|$replace=/target=_blank/target=_self/
-|http$subdocument,replace=/target="_blank"/target="_self"/
+|http$replace=/target="_blank"/target="_self"/
