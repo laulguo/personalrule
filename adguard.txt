@@ -5,4 +5,4 @@
 ! Last Modified: 2022年08月15日 23:27
 ! Homepage: https://github.com/laulguo/personalrule
 ! Start
-|http$replace=/target="_self"/target="_self"/
+|http$replace=/target="_blank"/target="_self"/
