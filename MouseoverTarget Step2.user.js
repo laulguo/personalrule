@@ -6,6 +6,7 @@
 // @include       *.baidu.*
 // @include       *qidian.com*
 // @include       *zhihu.com*
+// @include       *hupu.com*
 // @grant        none
 // @run-at       document-start
 // @updateURL https://github.com/laulguo/personalrule/raw/refs/heads/master/MouseoverTarget%20Step2.user.js
