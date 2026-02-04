@@ -9,6 +9,7 @@
 // @include       *hupu.com*
 // @grant        none
 // @run-at       document-start
+// @downloadURL https://github.com/laulguo/personalrule/raw/refs/heads/master/MouseoverTarget%20Step2.user.js
 // @updateURL https://github.com/laulguo/personalrule/raw/refs/heads/master/MouseoverTarget%20Step2.user.js
 // ==/UserScript==
 
