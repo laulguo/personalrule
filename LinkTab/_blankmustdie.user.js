@@ -2,10 +2,11 @@
 // @name           _blank Must Die
 // @namespace      http://maxkueng.com/gmscripts
 // @description    Removes the target attribute from hyperlinks that open a new browser window
-// @version        1.3
+// @version        1.3.1
 // @author         Max Kueng
 // @homepage       http://maxkueng.com/
 // @include        *
+// @grant none
 // ==/UserScript==
 
 (function (){
