@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         强制当前页打开链接 (鼠标预处理)
+// @name         强制当前页打开链接-鼠标预处理
 // @version      3.0
 // @description  利用“鼠标悬停”预处理和“点击拦截”双重机制，彻底解决知乎、虎扑等动态加载网站在新标签页打开的问题。
 // @author       laulguo/Gemini3.0
@@ -8,6 +8,7 @@
 // @include       *zhihu.com*
 // @grant        none
 // @run-at       document-start
+// @update-url https://github.com/laulguo/personalrule/raw/refs/heads/master/MouseoverTarget%20Step2.user.js
 // ==/UserScript==
 
 (function() {
