@@ -7,6 +7,7 @@
 // @include       *qidian.com*
 // @include       *zhihu.com*
 // @include       *hupu.com*
+// @include       *lkong.com*
 // @grant        none
 // @run-at       document-start
 // @downloadURL https://github.com/laulguo/personalrule/raw/refs/heads/master/LinkTab/MouseoverTarget%20Step2.user.js
