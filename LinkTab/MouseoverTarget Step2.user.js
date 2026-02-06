@@ -21,7 +21,7 @@
     function fixLink(link) {
         if (link.target === '_blank' || link.getAttribute('target') === '_blank') {
             link.removeAttribute('target'); // 移除 target 属性
-            link.target = '_self';          // 显式指定为当前页
+            link.target = '_self';  // 显式指定为当前页
         }
     }
 
