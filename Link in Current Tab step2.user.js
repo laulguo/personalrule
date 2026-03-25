@@ -7,6 +7,7 @@
 // @include       *zhihu.com*
 // @namespace     *
 // @grant         none
+// @updateURL https://raw.githubusercontent.com/laulguo/personalrule/master/Link%20in%20Current%20Tab%20step2.user.js
 // @description   Force all links to be opened in current tab instead of the new one
 // ==/UserScript==
 
