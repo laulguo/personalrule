@@ -1,43 +1,38 @@
 // ==UserScript==
 // @name          Link in Current Tab
-// @author        paul_guo
-// @version       20220517
+// @author        paul_guo/Claude Opus 4.6
+// @version       20260325
 // @include       *.baidu.*
 // @include       *qidian.com*
+// @include       *zhihu.com*
 // @namespace     *
-// @updateURL https://raw.githubusercontent.com/laulguo/personalrule/master/target%20blank%20remove_part_mode/Link%20in%20Current%20Tab%20step2.user.js
+// @grant         none
 // @description   Force all links to be opened in current tab instead of the new one
-// Based on SAGAN‘s Link in Current Tab-https://chrome.google.com/webstore/detail/cbkcdebbfbegnmbephalggnchfebihbl
 // ==/UserScript==
 
-window.addEventListener('click', handle);
-window.addEventListener('click', handle, true);
-window.addEventListener('submit', handle);
-window.addEventListener('submit', handle, true);
-
 function handle(e) {
-  let i = 0, el = e.target, els = [];
-  let frames = Array.from(document.querySelectorAll('iframe,frame')).map(f => f.name).filter(f => f);
-  try {
-    if( window.parent != window ) {
-      frames.push(...Array.from(window.parent.document.querySelectorAll('iframe,frame')).map(f => f.name).filter(f => f));
-    }
-  } catch(e) {}
-
-  while( el && !el.target && i++ < 5 ) {
+  let el = e.target;
+  let i = 0;
+  
+  while( el && el.tagName !== 'A' && el.tagName !== 'FORM' && i++ < 5 ) {
     el = el.parentNode;
   }
 
-  els.push(el, document.querySelector('head base'));
-  els.forEach(el => {
-    if( el && el.target ) {
-      if( el.target.startsWith('_') ) {
-        if( el.target == "_blank" ) {
-          el.target = "_top";
-        }
-      } else if( !frames.includes(el.target) ) {
-        el.target = "_top";
+  if( el && (el.tagName === 'A' || el.tagName === 'FORM') ) {
+    if( el.target && (el.target === '_blank' || el.target === '_new') ) {
+      console.log('拦截新标签页:', el.target);
+      e.preventDefault();
+      e.stopPropagation();
+      
+      if( el.tagName === 'A' ) {
+        window.location.href = el.href;
+      } else if( el.tagName === 'FORM' ) {
+        el.target = '_self';
+        el.submit();
       }
     }
-  });
+  }
 }
+
+document.addEventListener('click', handle, true);
+document.addEventListener('submit', handle, true);
