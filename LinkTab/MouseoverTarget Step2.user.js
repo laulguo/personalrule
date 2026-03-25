@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         强制当前页打开链接-鼠标预处理
-// @version      20260206
+// @version      20260325
 // @description  利用“鼠标悬停”预处理和“点击拦截”双重机制，彻底解决知乎、虎扑等动态加载网站在新标签页打开的问题。
 // @author       laulguo/Gemini3.0
 // @include       *.baidu.*
@@ -8,7 +8,7 @@
 // @include       *zhihu.com*
 // @include       *hupu.com*
 // @include       *lkong.com*
-// @grant        none
+// @grant        window.open
 // @run-at       document-start
 // @updateURL    https://raw.githubusercontent.com/laulguo/personalrule/master/LinkTab/MouseoverTarget%20Step2.user.js
 // @downloadURL  https://raw.githubusercontent.com/laulguo/personalrule/master/LinkTab/MouseoverTarget%20Step2.user.js
@@ -53,10 +53,8 @@
 
     // 策略三：针对 window.open 的补丁 (可选，防止纯 JS 弹窗)
     // 部分网站不使用 <a> 标签，而是用 JS 弹窗，这里进行劫持
-    const originalOpen = window.open;
-    window.open = function(url, target, features) {
-        // 强制目标为 _self
-        return originalOpen.call(window, url, '_self', features);
-    };
-
+  const originalOpen = unsafeWindow.window.open;
+  unsafeWindow.window.open = function(url, target, features) {
+      return originalOpen.call(unsafeWindow.window, url, '_self', features);
+  };
 })();
