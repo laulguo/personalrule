@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name          Link in Current Tab
 // @author        paul_guo/Claude Opus 4.6
-// @version       20260326
+// @version       20260326v2
 // @include       *.baidu.*
 // @include       *qidian.com*
 // @include       *zhihu.com*
