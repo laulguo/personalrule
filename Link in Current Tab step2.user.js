@@ -1,10 +1,11 @@
 // ==UserScript==
 // @name          Link in Current Tab
 // @author        paul_guo/Claude Opus 4.6
-// @version       20260325
+// @version       20260326
 // @include       *.baidu.*
 // @include       *qidian.com*
 // @include       *zhihu.com*
+// @include       *hupu.com*
 // @namespace     *
 // @grant         none
 // @updateURL https://raw.githubusercontent.com/laulguo/personalrule/master/Link%20in%20Current%20Tab%20step2.user.js
