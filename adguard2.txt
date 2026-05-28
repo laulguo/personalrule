@@ -1,0 +1,11 @@
+! Title: JumpingFilters
+! Expires: Never
+! Version: 20260528
+! Last Modified: 2026年05月28日 17:48
+! Homepage: https://github.com/laulguo/personalrule
+! Start
+#%#//scriptlet('remove-attr', 'target', 'a[target="_blank"]', 'asap')
+baidu.*#%#//scriptlet('remove-attr', 'target', 'a[target="_blank"]', 'asap stay')
+qidian.*#%#//scriptlet('remove-attr', 'target', 'a[target="_blank"]', 'asap stay')
+zhihu.*#%#//scriptlet('remove-attr', 'target', 'a[target="_blank"]', 'asap stay')
+lkong.*#%#//scriptlet('remove-attr', 'target', 'a[target="_blank"]', 'asap stay')
